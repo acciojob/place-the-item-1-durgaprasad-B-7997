@@ -1,2 +1,26 @@
 
 /* Your CSS Code here. */
+.holder {
+  display: flex;
+  flex-wrap: wrap;             /* Allows items to wrap to next line */
+  justify-content: space-between; /* Creates space between items */
+  align-items: flex-start;     /* Aligns items to the top */
+}
+
+.item {
+  flex: 0 0 auto;              /* Prevent items from shrinking */
+  width: 100px;                /* Fixed width for consistency */
+  height: 100px;               /* Fixed height */
+  text-align: center;
+  font-size: 2em;
+  line-height: 100px;          /* Vertically center text */
+}
+
+/* Optional: Add color based on number (for illustration) */
+.item:nth-child(1) { background-color: red; }
+.item:nth-child(2) { background-color: blue; }
+.item:nth-child(3),
+.item:nth-child(4),
+.item:nth-child(5),
+.item:nth-child(6),
+.item:nth-child(7) { background-color: green; }
